@@ -151,7 +151,7 @@ with tab1:
 with tab2:
     st.subheader("Kết quả trên tập kiểm tra (mô hình đủ 4 chỉ số)")
     try:
-        test = tai_csv("Tap_Test.csv")
+        test = tai_csv("tap_test.csv")
     except FileNotFoundError:
         st.error("Không tìm thấy Tap_Test.csv trong thư mục dự án (hãy đổi tên từ Tập_Test.csv).")
         st.stop()
@@ -198,8 +198,8 @@ with tab2:
 with tab3:
     st.subheader("Dữ liệu huấn luyện / kiểm tra")
     try:
-        train = tai_csv("Tap_Train.csv")
-        test = tai_csv("Tap_Test.csv")
+        train = tai_csv("tap_train.csv")
+        test = tai_csv("tap_test.csv")
     except FileNotFoundError:
         st.error("Thiếu Tap_Train.csv hoặc Tap_Test.csv trong thư mục dự án.")
         st.stop()
